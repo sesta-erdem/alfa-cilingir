@@ -14,3 +14,81 @@
 /* Readable supporting copy across screen sizes. */
 .service-card p,.blog-content p,.reviews-panel p{font-size:14px}.hero-fine{font-size:12px!important}.photo-card p,.region-row .region-neighborhood{font-size:12px}.footer-grid>div>a:not(.brand),.footer-address,.footer .hours{font-size:14px}.footer h3{font-size:14px}.region-note{display:flex}.article-content .neighborhoods a{text-decoration:none}.neighborhoods a{display:inline-flex}.neighborhoods a:hover span{background:#e3edff;color:#1d4ed8}
 @media(max-width:520px){.service-card p{font-size:13px}.region-row .region-neighborhood{font-size:11px;line-height:1.6}.photo-card p{font-size:11px}.footer-grid>div>a:not(.brand){font-size:13px}}
+
+/* Compact tracking and consistent contact controls. */
+.eyebrow{letter-spacing:.035em}
+.brand-sub{letter-spacing:.65px}
+.service-card.featured .service-tag{letter-spacing:.035em}
+.topbar{letter-spacing:0}
+.header-phone,.button,.fixed-contact a{white-space:nowrap}
+.button-label{white-space:nowrap;flex-shrink:0;line-height:1.5}
+.contact-buttons{display:grid;grid-template-columns:repeat(2,max-content);max-width:100%}
+.contact-buttons .button{min-width:0;letter-spacing:0}
+.aside-contact .contact-buttons{grid-template-columns:1fr}
+@media(max-width:800px){
+.assurance-item,.assurance-item:first-child{justify-content:center;align-items:center;text-align:center;flex-direction:column;padding:0 8px}
+.assurance-item>div{width:100%}
+.aside-contact .contact-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+.contact-block,.cta-box .contact-block{width:100%;min-width:0}
+.contact-buttons,.aside-contact .contact-buttons{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.contact-buttons .button,.cta-box .contact-buttons .button{padding:13px 10px;gap:7px;font-size:13px}
+.brand-sub{letter-spacing:.65px}
+.assurance-item,.assurance-item:first-child{padding:0 4px;align-items:center;justify-content:flex-start;text-align:center}
+}
+@media(max-width:380px){.contact-buttons .button>svg:last-child{display:none}}
+
+/* Photo-led service and editorial cards. */
+.service-card.media-card{padding:0;overflow:hidden;min-height:0;gap:0}
+.service-image{position:relative;flex-shrink:0;width:100%;height:155px;overflow:hidden;background:#e8edf3}
+.service-image img,.photo-cover img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.media-card:hover .service-image img,.blog-card:hover .photo-cover img{transform:scale(1.035)}
+.card-image-icon{position:absolute;top:15px;left:15px;display:grid;place-items:center;width:37px;height:37px;border-radius:10px;background:#ffffffed;color:var(--blue);border:1px solid #ffffff90}
+.service-copy{padding:23px;flex:1;display:flex;flex-direction:column}
+.service-title-line{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.service-title-line>svg{color:var(--blue);margin-top:4px}
+.service-card.media-card h3{font-size:18px;line-height:1.4;margin-bottom:9px}
+.service-card.media-card p{font-size:14px;line-height:1.75}
+.service-card.media-card.featured{min-height:0;padding:0}
+.featured .service-image{height:320px;flex:1}
+.featured .service-copy{padding:30px;flex:0 0 auto}
+.service-card.media-card.featured h3{font-size:28px;margin-top:0}
+.featured .service-title-line>svg{color:white;margin-top:8px}
+.featured .featured-link{margin-top:23px}
+.service-card.media-card.compact{flex-direction:row;align-items:stretch}
+.compact .service-image{width:32%;height:170px}
+.compact .service-copy{justify-content:center;padding:25px 30px}
+.compact .service-title-line{align-items:center}
+.index-grid .media-card .service-image{height:195px}
+.blog-cover.photo-cover{padding:0;height:215px;display:block;overflow:hidden}
+.article-cover{margin:26px 0 25px}
+.article-cover img{width:100%;height:auto;aspect-ratio:16 / 9;object-fit:cover;border-radius:17px;background:#e8edf3}
+.article-cover figcaption{font-size:12px;text-align:right;color:#758095;margin-top:7px;letter-spacing:0}
+@media(max-width:800px){
+.service-card.media-card.featured{min-height:0}
+.featured .service-image{height:260px;flex:auto}
+.featured .service-copy{padding:27px}
+.service-card.media-card.compact{flex-direction:column}
+.compact .service-image{width:100%;height:155px}
+.compact .service-copy{padding:23px;justify-content:flex-start}
+.blog-cover.photo-cover{height:165px}
+}
+@media(max-width:520px){
+.service-image,.compact .service-image{height:132px}
+.card-image-icon{width:31px;height:31px;top:11px;left:11px;border-radius:8px}
+.card-image-icon svg{width:18px;height:18px}
+.service-copy,.compact .service-copy{padding:17px}
+.service-title-line{gap:5px}
+.service-title-line>svg{width:15px;height:15px;margin-top:4px}
+.service-card.media-card h3{font-size:16px}
+.service-card.media-card p{font-size:13px}
+.featured .service-image{height:215px}
+.featured .service-copy{padding:24px}
+.service-card.media-card.featured h3{font-size:27px}
+.featured .featured-link{margin-top:20px}
+.blog-cover.photo-cover{height:210px}
+.index-grid .media-card .service-image{height:205px}
+.article-cover{margin:22px 0}
+.article-cover img{aspect-ratio:3 / 2;border-radius:13px}
+}

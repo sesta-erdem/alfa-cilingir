@@ -1,4 +1,4 @@
-# Alifa Çilingir
+# Alfa Çilingir
 
 Astro 5 + Tailwind CSS 4 ile statik, Türkçe ve mobil uyumlu çilingir sitesi. Shadcn tasarım dilinde yerel Astro bileşenleri; React gerektirmez.
 
@@ -29,7 +29,7 @@ Telefon/adres kullanıcı tarafından sağlanmıştır. No:35 ve işletme Google
 
 15 dakika yakın bölgeler için bir varış hedefidir; trafik, konum ve ekip uygunluğu notuyla sunulur. Çevrim içi göstergesi belirlenen çalışma saatlerini gösterir, canlı operatör durumu değildir.
 
-`astro.config.mjs` içindeki `site` önizleme yayın adresidir. Alifaçilingir.com için alan adı/DNS bağlantısı ayrıca yapılmalı; bağlandıktan sonra `site` gerçek kanonik alan adıyla güncellenip yeniden derlenmelidir. Sitemap, canonical ve JSON-LD bundan türetilir. Özel yayın arama motorları tarafından herkese açık site olarak indekslenmez.
+`astro.config.mjs` içindeki `site` önizleme yayın adresidir. Alfaçilingir.com için alan adı/DNS bağlantısı ayrıca yapılmalı; bağlandıktan sonra `site` gerçek kanonik alan adıyla güncellenip yeniden derlenmelidir. Sitemap, canonical ve JSON-LD bundan türetilir. Güncel yayın adresi: https://alfa-cilingir.gptuser1212.chatgpt.site
 
 FAQPage işaretlemesi Google'da zengin sonuç gösterileceğini garanti etmez. Fotoğraf stok ve temsilidir, gerçek işletme personeli iddiası içermez.
 
@@ -50,3 +50,9 @@ Yerel dosya: `public/images/locksmith-hero.jpg`.
 - https://www.basaksehir.bel.tr/muhtarliklar
 
 Bahçeşehir ayrı ilçe değil, Başakşehir'e bağlı 1. Kısım ve 2. Kısım mahallelerini kapsayan hizmet bölgesidir.
+
+## Eylül 2026 görsel ve mobil güncellemesi
+
+Marka Alfa Çilingir olarak düzeltildi. Telefon ve WhatsApp etiketleri tek satırda; mobil güven alanları ortalı. Hizmet kartları, blog kartları ve tüm hizmet/bölge/blog yazılarının başlangıcında temsili görseller bulunur.
+
+Altı görsel yerleşik ImageGen aracıyla üretilmiştir. WebP dosyaları `public/images/services/` klasöründe, 640 ve 1280 piksel genişliğinde sunulur. Üretim promptları `docs/generated-image-prompts.json` dosyasındadır. Görseller gerçek işletme personeli, mekânı veya hizmet müdahalesinin belgesi olarak sunulmaz.

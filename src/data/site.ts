@@ -1,8 +1,8 @@
 export const business = {
- name: 'Alifa Çilingir', phone: '0541 608 37 71', tel: 'tel:+905416083771',
+ name: 'Alfa Çilingir', phone: '0541 608 37 71', tel: 'tel:+905416083771',
  whatsapp: 'https://wa.me/905416083771?text=Merhaba%2C%20%C3%A7ilingir%20hizmeti%20almak%20istiyorum.',
  address: 'Büyükşehir Mahallesi, Cumhuriyet Caddesi, Derya Sokak No: 35, Beylikdüzü / İstanbul',
- maps: 'https://www.google.com/maps/search/?api=1&query=Alifa%20%C3%87ilingir%20B%C3%BCy%C3%BCk%C5%9Fehir%20Cumhuriyet%20Caddesi%20Derya%20Sokak%2035%20Beylikd%C3%BCz%C3%BC',
+ maps: 'https://www.google.com/maps/search/?api=1&query=Alfa%20%C3%87ilingir%20B%C3%BCy%C3%BCk%C5%9Fehir%20Cumhuriyet%20Caddesi%20Derya%20Sokak%2035%20Beylikd%C3%BCz%C3%BC',
 };
 export const services = [
  {slug:'kapi-acma',title:'Kapı açma',icon:'door',summary:'Anahtar içeride kaldıysa, kapınız güvenli ellerde.',tag:'EV & İŞ YERİ'},
