@@ -1,0 +1,4 @@
+---
+import Icon from './Icon.astro';import editorial from '../data/editorial.json';
+---
+<div class="blog-grid">{editorial.posts.map((post,i)=><a class="blog-card" href={'/blog/'+post.slug+'/'}><div class:list={['blog-cover',{charcoal:i===1,pale:i===2}]}><Icon name={['door','key','lock'][i]} size={57}/><span class="editorial-no">0{i+1}</span></div><div class="blog-content"><div class="blog-meta"><span>{post.category}</span><span>{post.readTime}</span></div><h3>{post.title}</h3><p>{post.description}</p><span class="text-link">Yazıyı okuyun<Icon name="right" size={16}/></span></div></a>)}</div>
